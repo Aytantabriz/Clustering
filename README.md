@@ -4,7 +4,8 @@ K-means and PCA analysis
 ## K-Means Intuition
 
 **STEP 1:** Choose the number K of clusters
-![Elbow method]()
+
+![Elbow method](https://github.com/Aytantabriz/Clustering/blob/main/elbow%20method.png)
 ```
 wcss = vector()
 for (i in 1:10) wcss[i] = sum(kmeans(dataset, i)$withinss)
@@ -19,13 +20,13 @@ for (i in 1:10) wcss[i] = sum(kmeans(dataset, i)$withinss)
 
 If any reassignment took place, go to **STEP4**, otherwise, go to FIN
 
-![Clusters of customers]()
+![Clusters of customers](https://github.com/Aytantabriz/Clustering/blob/main/k-clusterin%20h2o.png)
 
 
 ## PCA
 To interpret each component, we need to calculate the relationships between the original data and each principal component.
 These relationships are obtained by the correlation procedure. In addition to all nine of the original variables, we include the first three principal components, "prin1, prin2, prin3, and prin4." We use the relationships between the principal components and the original variables to interpret these principal components
 
-![Correlation plot for PCA]()
+![Correlation plot for PCA](https://github.com/Aytantabriz/Clustering/blob/main/corr%20plot%20pca.png)
 
-![PCA result]()
+![PCA result](https://github.com/Aytantabriz/Clustering/blob/main/PCA%20h2o.png)
